@@ -20,7 +20,6 @@ header {
 }
 
 .step {
-  /* background-color: purple; */
   height: 14%;
   border-bottom: 2px #f0f0f0 solid;
 }
@@ -29,6 +28,7 @@ header {
   height: 72%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .description {
@@ -43,16 +43,34 @@ header {
 
 .crop {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 65%;
+  height: 88%;
+}
+
+.cropImage {
+  position: relative;
+  width: 80%;
+  height: 80%;
+}
+
+.controllers {
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
-  height: 88%;
+  width: 80%;
+}
+
+input[type="range"] {
+  width: 80%;
 }
 
 .preview {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 25%;
   height: 88%;
 }
 
@@ -93,22 +111,3 @@ button {
 input[type="file"] {
   display: none;
 }
-
-/* .imageContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 8px;
-}
-
-img {
-  width: 100%;
-}
-
-.crop {
-  position: "relative";
-  width: "50%";
-  height: 100;
-  background: "#333";
-} */
